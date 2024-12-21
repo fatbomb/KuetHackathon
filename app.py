@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from models import db
 from controllers import ingredient_blueprint
 from controllers.recipe_controller import recipe_controller
+from controllers.process_file_controller import process_file_controller
 
 load_dotenv()
 
@@ -20,6 +21,8 @@ db.init_app(app)
 
 app.register_blueprint(ingredient_blueprint, url_prefix="/ingredients")
 app.register_blueprint(recipe_controller, url_prefix='/recipes')
+app.register_blueprint(process_file_controller, url_prefix='')
+
 
 with app.app_context():
     db.create_all()
