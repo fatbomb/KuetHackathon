@@ -1,0 +1,12 @@
+flask
+python-dotenv
+psycopg2-binary
+flask_cors
+flask_sqlalchemy
+requests
+jwt
+pdf2image 
+pillow
+beautifulsoup4
+pyJWT
+pymysql
