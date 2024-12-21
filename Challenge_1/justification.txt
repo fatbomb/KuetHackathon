@@ -1,1 +1,6 @@
+mBART Large 50 has been used.
+Learning Rate: 2e-5. Finetuning a large model should have a low learning rate.
+Batch_size: 16. Larger batch sizes require more memory. 16 is a moderate choice.
+epoch_size: 3. To avoid overfitting. 
 
+*** We could not host the model to hugging face because event the 3 epoch has a large training time and so our model training will not be completed in the given time frame. ***
